@@ -4,9 +4,9 @@
   "description": "Simple API that returns some info",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node ./index.ts",
+    "dev": "nodemon --exec ts-node --esm ./index.ts",
     "build": "tsc",
-    "start": "ts-node ./src/index.ts"
+    "start": "ts-node --esm ./src/index.ts"
   },
   "type": "module",
   "keywords": [],
