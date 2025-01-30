@@ -2,11 +2,11 @@
   "name": "1-about-me",
   "version": "1.0.0",
   "description": "Simple API that returns some info",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node --esm ./index.ts",
+    "dev": "nodemon --exec ts-node --esm ./src//index.ts",
     "build": "tsc",
-    "start": "ts-node --esm ./src/index.ts"
+    "start": "node dist/index.js"
   },
   "type": "module",
   "keywords": [],
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
-    "@types/express": "github:types/express",
+    "@types/express": "^4.17.21",
     "@types/node": "^22.12.0"
   }
 }
