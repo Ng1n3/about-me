@@ -8,10 +8,6 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 
 app.get('/', (req: Request, res: Response) => {
-  res.send({ message: 'Server is up an running' });
-});
-
-app.get('/api/v1/about', (req: Request, res: Response) => {
   res.send({
     email: 'code.with.muyiwa@gmail.com',
     current_datetime: new Date().toISOString(),
@@ -19,6 +15,9 @@ app.get('/api/v1/about', (req: Request, res: Response) => {
   });
 });
 
+app.get('/healthcheck', (req: Request, res: Response) => {
+  res.send({ status: 'Server is up an running' });
+});
 app.get('*', (req: Request, res: Response) => {
   res.status(404).send({ message: 'Route not found' });
 });

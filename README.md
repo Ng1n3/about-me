@@ -35,7 +35,7 @@ pnpm run dev
 
 ## Status
 
-**`GET /`**
+**`GET /healthcheck`**
 
 Returns the status of the API.
 
@@ -53,7 +53,7 @@ No response or any other response indicates that the API is not functioning corr
 
 ## About
 
-**`GET /about`**
+**`GET /`**
 
 Returns some info about me and this API service.
 
@@ -68,7 +68,7 @@ Example response:
 
 ```
 {
-	"email": "olumuyiwa@gmail.com",
+	"email": "youremail@gmail.com",
 	"current_datetime": "2025-01-30T00:27:22.097Z",
 	"github_url": "https://github.com/Ng1n3/about-me"
 }
