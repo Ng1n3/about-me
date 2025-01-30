@@ -17,6 +17,12 @@ importers:
       express:
         specifier: ^4.21.2
         version: 4.21.2
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.12.0)(typescript@5.7.3)
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
     devDependencies:
       '@types/cors':
         specifier: ^2.8.17
@@ -27,12 +33,6 @@ importers:
       '@types/node':
         specifier: ^22.12.0
         version: 22.12.0
-      ts-node:
-        specifier: ^10.9.2
-        version: 10.9.2(@types/node@22.12.0)(typescript@5.7.3)
-      typescript:
-        specifier: ^5.7.3
-        version: 5.7.3
 
 packages:
 
