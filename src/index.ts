@@ -13,7 +13,7 @@ app.get('/', (req: Request, res: Response) => {
 
 app.get('/api/v1/about', (req: Request, res: Response) => {
   res.send({
-    email: 'olumuyiwa@gmail.com',
+    email: 'code.with.muyiwa@gmail.com',
     current_datetime: new Date().toISOString(),
     github_url: 'https://github.com/Ng1n3/about-me',
   });
